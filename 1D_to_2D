@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+void main()
+
+{
+    int n,m,i,j,k,a[100],b[50][50],c=0;
+    printf("Enter number of row");
+    scanf("%d",&m);
+    printf("Enter number of colum");
+    scanf("%d",&n);
+    printf(" Enter element for to be generate %d * %d matric",n,m);
+    for(i=0;i<(n*m);i++)
+    {
+       
+        scanf("%d",&a[i]);
+        
+    }
+    
+    printf("previous 1D array is =\n");
+    for(i=0;i<(n*m);i++)
+    {
+       
+        printf("   %d",a[i]);
+        
+    }
+    
+    
+    printf(" \n Now array is :- \n");
+    for(i=0;i<m;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            b[i][j]=a[c];
+            c=c+1;
+            printf ("  %d|%d,%d| ",b[i][j],i,j);
+            
+        }
+        
+        printf("\n");
+    }
+    
+    
+    
+    
+}
