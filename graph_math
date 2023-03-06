@@ -1,0 +1,34 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include<math.h>
+//float pai=(22/7);
+
+int main() {
+    
+    int x1,y1,x2,y2;
+    printf("Enter the first codinate ");
+    scanf("%d",&x1);
+    scanf("%d",&y1);
+    printf ("Enter the 2nd codinate ");
+    scanf("%d",&x2);
+    scanf("%d",&y2);
+    float dis,angle,dir_x,dir_y;
+    
+    dis=sqrt((x2-x1)*(x2-x1)+((y2-y1)*(y2-y1)));
+    printf(" Distance of %f",dis);
+    angle=atan2((y2-y1),(x2-x1));
+    float pai=3.14159265;
+   angle=angle*57.2958;
+    printf("\n Angle is =%f",angle);
+    
+    //dir_x=(x2-x1)/dir;
+   // dir_y=(y2-y1)/dir;
+    
+    //printf("\n direction ")
+    
+    
+    
+    
+    
+    return 0;
+}
